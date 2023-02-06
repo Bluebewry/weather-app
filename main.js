@@ -2,7 +2,7 @@ const getFormData = async (event) => {
     event.preventDefault()
     const zip = event.target.zip.value
     console.log(zip)
-    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=91012d9aad47a7e3fd985fdf7f026e73&units=imperial`
+    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip}&appid=&units=imperial`
 
     const res = await fetch(url)
     const data = await res.json()
